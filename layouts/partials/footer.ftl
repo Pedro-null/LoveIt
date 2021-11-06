@@ -1,3 +1,4 @@
+<#--  footer.ftl 已完成  -->
 <#if (settings.footer_enable) != false>
     <footer class="footer">
         <div class="footer-container">
