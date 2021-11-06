@@ -1,3 +1,11 @@
+本主题移植自 Hugo 的 LoveIt 主题   
+原主题地址：https://github.com/dillonzq/LoveIt   
+原作者：https://github.com/dillonzq   
+非常感谢作者做出这么优秀的主题！！！   
+
+接下来，我们就来把它移植到 halo 博客系统。
+
+
 # LoveIt Theme | Hugo [![Netlify Status](https://api.netlify.com/api/v1/badges/e60303f2-862c-4342-bf59-7c9adb10812e/deploy-status)](https://app.netlify.com/sites/hugo-loveit/deploys)
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/dillonzq/LoveIt?style=flat-square)](https://github.com/dillonzq/LoveIt/releases)

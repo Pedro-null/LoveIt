@@ -1,0 +1,290 @@
+general:
+  label: 基本设置
+  items:
+    rss:
+      name: rss
+      label: RSS
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+        
+    RobotsTXT:
+      name: RobotsTXT
+      label: robots.txt
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    
+    GitInfo:
+      name: GitInfo
+      label: 是否使用 git 信息
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 是
+        - value: false
+          label: 否
+
+    Emoji:
+      name: Emoji
+      label: 是否使用 emoji 代码
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 是
+        - value: false
+          label: 否
+
+style:
+  label: 样式设置
+  items:
+    title:
+      name: title
+      label: 标题
+      type: text
+      description: '当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题'
+
+    noFavicon:
+          name: noFavicon
+          label: 是否隐藏网站图标资源链接
+          type: radio
+          data-type: bool
+          default: false
+          options:
+            - value: true
+              label: 是
+            - value: false
+              label: 否
+
+    svgFavicon:
+          name: svgFavicon
+          label: SVG 网站图标
+          type: attachment
+          description: '更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件'
+
+    themeColor:
+      name: themeColor
+      label: 主题色
+      type: color
+      default: '#ffffff'
+      description: 'Android 浏览器主题色'
+
+    iconColor:
+      name: iconColor
+      label: Safari 图标颜色
+      type: color
+      default: '#5bbad5'
+    
+    tileColor:
+      name: tileColor
+      label: 磁贴颜色
+      type: color
+      default: '#da532c'
+      description: 'Windows v8-10 磁贴颜色'
+
+footer:
+  label: 页脚信息配置
+  items:
+    footer_enable:
+      name: footer_enable
+      label: 是否开启
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+    footer_custom:
+      name: footer_custom
+      label: 自定义内容
+      type: text
+      default: '<a id="hitokoto">正在加载一言...</a><script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto&c=d&c=e&c=j" defer></script>'
+      description: '自定义内容 (支持 HTML 格式)'
+    
+    footer_halo:
+      name: footer_halo
+      label: 是否显示主题信息
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+    footer_copyright:
+      name: footer_copyright
+      label: 是否显示版权信息
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+    footer_author:
+      name: footer_copyright
+      label: 是否显示作者
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    
+    footer_since:
+      name: footer_since
+      label: 网站创立年份
+      type: text
+
+    footer_icp:
+      name: footer_icp
+      label: ICP 备案信息
+      type: text
+      description: 'ICP 备案信息，仅在中国使用 (支持 HTML 格式)'
+
+    footer_license:
+      name: footer_license
+      label: 许可协议信息
+      type: text
+      description: '许可协议信息 (支持 HTML 格式)'
+
+    footer_music:
+      name: footer_music
+      label: 是否加音乐控件
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    
+    footer_musiclist:
+      name: footer_musiclist
+      label: 自定义歌单
+      type: text
+      default: '<meting-js 
+                      fixed="true"
+                      lrc-type="0"
+                      order= "random"
+                      preload="auto"
+                      server="tencent" 
+                      type="playlist" 
+                      id="8186794433">
+                  </meting-js>'
+    
+search:
+  label: 搜索设置
+  items:
+    enablesearch:
+      name: enablesearch
+      label: 是否开启
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 是
+        - value: false
+          label: 否
+        
+    typeSearch:
+      name: typeSearch
+      label: 搜索引擎类型
+      type: radio
+      default: lunr
+      options:
+        - value: lunr
+          label: lunr
+
+    contentLength:
+      name: contentLength
+      label: 最大索引长度
+      type: text
+      default: 4000
+      description: '文章内容最长索引长度'
+
+    placeholder:
+      name: placeholder
+      label: 占位提示语
+      type: text
+      default: ''
+      description: '搜索框的占位提示语'
+
+    maxResultLength:
+      name: maxResultLength
+      label: 最大结果数
+      type: text
+      default: 10
+    
+    snippetLength:
+      name: snippetLength
+      label: 结果内容片段长度
+      type: text
+      default: 50
+
+    highlightTag:
+      name: highlightTag
+      label: 高亮标签
+      type: text
+      default: 'em'
+      description: '搜索结果中高亮部分的 HTML 标签'
+
+    absoluteURL:
+      name: absoluteURL
+      label: 是否使用绝对路径
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 是
+        - value: false
+          label: 否
+      description: '是否在搜索索引中使用基于 baseURL 的绝对路径'
+
+code:
+  label: 代码设置
+  items:
+    copy:
+      name: copy
+      label: 是否显示代码块的复制按钮
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 是
+        - value: false
+          label: 否
+
+    maxShownLines:
+      name: maxShownLines
+      label: 默认展开显示的代码行数
+      type: text
+      default: 10
+
